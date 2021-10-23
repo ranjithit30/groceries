@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <script src="uikit/js/uikit.min.js"></script>
+    <script src="uikit/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="uikit/css/uikit.min.css" />
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.floatingNav {
+  width: calc(100vh - 100px); 
+  border-radius: 2px;
+  box-shadow: 0px 1px 10px #999;
+}
+.navbar{
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  transition: 0.2s;
+  background-color: white;
+}
+h1{
+  font-family: 'Balsamiq Sans', cursive;
+  color: #25265e;
+  }
+  h3{
+    color: rgba(37, 38, 94, 0.7);
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.6;
+  }
+  h2
+  {
+    color:rgba(37, 38, 94, 0.7);
+    font-family: 'Josefin Sans', sans-serif;
+  }
+body{
+  background-color:#f9fbfd;
+  
+}
+.text-input{
+  
+  position: relative;
+  margin-top: 50px;
+  
+}
+  
+  input[type="text"]{
+    display: inline-block;
+    width: 500px;
+    height: 40px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 10px 10px 10px 100px;
+    transition: all 0.1s ease-out;
+  }
+  
+  input[type="text"] + label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    border-radius: 3px 0 0 3px;
+    padding: 0 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    background: #0456f3;
+    transform: translateZ(0) translateX(0);
+    transition: all 0.3s ease-in;
+    transition-delay: 0.2s;
+  }
+  
+  input[type="text"]:focus + label{
+    transform: translateY(-120%) translateX(0%);
+    border-radius: 3px;
+    transition: all 0.1s ease-out;
+  }
+  
+  input[type="text"]:focus{
+    padding: 10px;
+    transition: all 0.3s ease-out;
+    transition-delay: 0.2s;
+  }
+::placeholder {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: medium;
+}
+.cards{
+background-color: #f9fbfd;
+}
+</style>
+</head>
+<body>
+  <script src="script.js"></script>
+<div class="navbar">
+    <ul>
+        <li><a href="#home" style="color: black;">Home</a></li>
+        <li><a href="#news" style="color: black;">About</a></li>
+        <li><a href="#contact" style="color: black;" >Contact</a></li>
+        <li><a href="#contact" style="color: black;" >Products</a></li>
+        <li style="float:right"><a href="login.html" style="color: black;" >Account</a></li>
+      </ul>
+</div>
+<br>
+<br>
+<br>
+<div style="
+    padding-top: 100px;
+    padding-left: 100px;">
+  <h1>Get the grocery from where you are !</h1>
+  <h3>Farm delivers the fruits and vegitables<br>
+  It deliver the to the hotels and subermarkets<br>
+  By this it helps the local farmers</h3>
+</div>
+<br>
+<div style="
+padding-left: 100px;
+">
+  <h2>Subscribe us and get the updates</h2>
+  <br>
+  <div class="text-input" style="margin-top: 10px;">
+    <input class="ip" type="text" id="input1" placeholder="Enter your Email Here ⟶">
+    <label for="input1">Email</label>
+  </div>
+
+</div>
+  <br>
+<div class="cards">
+    <br>
+    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m " style="margin-left: 110px;width: 10%;align-items: center;">
+  <h3 class="uk-card-title">Fruits</h3>
+  <img src="food.png" alt="Fruit" style="height: 80px; width:80px;">
+</div>
+<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m " style="margin-left: 50px;width: 10%;align-items: center;">
+  <h3 class="uk-card-title">Vegies</h3>
+  <img src="veg.png" alt="Fruit" style="height: 80px; width:80px;">
+</div>
+<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m " style="margin-left: 50px;width: 10%;align-items: center;">
+  <h3 class="uk-card-title">Dry Fruits</h3>
+  <img src="dry.png" alt="Fruit" style="height: 80px; width:80px;">
+</div>
+<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m " style="margin-left: 50px;width: 10%;align-items: center;">
+  <h3 class="uk-card-title">Meat</h3>
+  <img src="meat.png" alt="Fruit" style="height: 80px; width:80px;">
+</div>
+</div>
+<br>
+<br>
+<br>
+</body>
+</html>
